@@ -3,17 +3,17 @@ package com.gawonfood;
 
 import java.util.ArrayList;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.gawonfood.so.PlazaAcademyApplySO;
 
-@Component
+@Controller
 public class AController {
 
-	@RequestMapping(value = "/sec/xhr/mypage/digitalplaza/academy/getMyAcademyList", method = RequestMethod.POST)
+	@RequestMapping(value = "xhr/mypage/digitalplaza/academy/getMyAcademyList", method = RequestMethod.POST)
 	public String getMyAcademyList(PlazaAcademyApplySO so, ModelMap map) throws Exception {
 		try {
 			System.out.println("타라타라");
